@@ -6,10 +6,28 @@ html
     title learn jade
   body
     .container.alert.alert-info
+
+      .rows
+        nav.navbar.navbar-default
+          a.navbar-brand(href="http://www.baidu.com")百度
+          ul.nav.navbar-nav
+            li.active
+              a(href="#") A link
+            li
+              a(href="#") B link
+            li
+              a(href="#") C link
+          
+          form.navbar-form.navbar-left(action="post")
+            input.form-control(type="text" placeholder="search")
+            button(type="submit")
+              span.glyphicon.glyphicon-search
+
       .rows
         .col-xs-4.col-sm-8 第一格
         .col-xs-4.col-sm-4 第二格
         .col-xs-4 第三格
+        
     script(type="text/javascript" src="../bower_components/jquery/dist/jquery.js")
     script(type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js")
     

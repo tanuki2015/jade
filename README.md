@@ -39,6 +39,42 @@ html
 - col-md-push-3
 - col-md-pull-9
 
-####不同屏幕大小条件下显示或隐藏
+#### 不同屏幕大小条件下显示或隐藏
 .visible-xs
 .hidden-md
+
+### 导航条
+使用nav元素，navbar 和 navbar-default
+```
+nav(.navbar.navbar-default) // 导航条
+
+ul.nav.navbar-nav // 导航条 中的 导航栏
+
+nav.navbar.navbar-default
+  a.navbar-brand(href="http://www.baidu.com")百度
+  ul.nav.navbar-nav
+    li.active
+      a(href="#") A link
+    li
+      a(href="#") B link
+    li
+      a(href="#") C link
+```
+
+navbar-fixed-top 固定在顶部，button也行。
+
+可以在页面中的style中重写这些类样式，或者引入自定义的时候放在bootstrap的css后面就行。
+
+### 要使内容居中，只需要用.container包起来
+
+### 导航条中的表单
+- role属性是给bootstrap用的，便于准确渲染。
+- .navbar-form表示是导航条中的表单，navbar-left表示定位在left
+- .form-control是每一个输入项（input）都有的类
+- glyphicon的图标放在空span中
+```
+form.navbar-form.navbar-left(action="post" role="form")
+  input.form-control(type="text" placeholder="search")
+  button(type="submit")
+    span.glyphicon.glyphicon-search
+```
