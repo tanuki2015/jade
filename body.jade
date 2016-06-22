@@ -1,0 +1,24 @@
+//  # 号 自动转义  ！号 不转义，可以执行
+h2 to run sayHi progrom !{sayHi}
+//  等号跟 #{...} 是一样的 实质上是输出变量
+h2= myName
+h3 my name is #{myName}
+// \ 转义
+p \#{myName}
+//  输出未定义的变量， 会undefined
+input(value='#{fooName}')
+// 用等号的方式，则不显示
+input(value=fooName)
+input(value=myName)
+
+//  循环 for in
+- const obj = {name: "xf", age:18, isMan:true}
+- for(var key in obj)
+  p= obj[key]
+
+// each
+- each value, key in obj
+  p #{key}: #{value}
+
+script.
+  const vname = 'ff'

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <!--除了class . 和 id # 其他属性要写在圆括号中-->
+    <meta charset="utf-8">
+    <title>imooc jade study</title>
+    <style>body{color: #ff6600;}
+
+    </style>
+  </head>
+  <body>
+    <!--  # 号 自动转义  ！号 不转义，可以执行-->
+    <h2>to run sayHi progrom </h2>
+    <!--  等号跟 #{...} 是一样的 实质上是输出变量-->
+    <h2></h2>
+    <h3>my name is </h3>
+    <!-- \ 转义-->
+    <p>#{myName}</p>
+    <!--  输出未定义的变量， 会undefined-->
+    <input value="undefined">
+    <!-- 用等号的方式，则不显示-->
+    <input>
+    <input>
+    <!--  循环 for in-->
+    <p>xf</p>
+    <p>18</p>
+    <p>true</p>
+    <!-- each-->
+    <p>name: xf</p>
+    <p>age: 18</p>
+    <p>isMan: true</p>
+    <script>const vname = 'ff'</script>
+  </body>
+</html>
+<!-- 可以引入html作为区块： include somehtml.html 后面有文件名就可以直接引入，而不被jade编码-->

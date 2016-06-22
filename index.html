@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--除了class . 和 id # 其他属性要写在圆括号中-->
+    <meta charset="utf-8">
+    <title>imooc jade study</title>
+    <style>body{color: #ff6600;}</style>
+    <script type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <h1>imooc jade xxxxx.xxxx.xxx </h1>
+    <h2>hi it's me!</h2>
+    <h3 class="title"></h3>
+    <h4 id="something"></h4><a href="http://www.baidu.com" title="baidu" data-uid="2000">baidu</a>
+    <input name="type" type="text" value="jade code">
+    <input name="type" type="checkbox" checked>
+    <p>
+      asdfasdfasdfasdasdfasdf
+      一段一段的文本的写法
+    </p>
+    <p>hahaha</p>
+    <!--  # 号 自动转义  ！号 不转义，可以执行-->
+    <h2>to run sayHi progrom <script>console.log('sayhi progrom')</script></h2>
+    <!--  等号跟 #{...} 是一样的 实质上是输出变量-->
+    <h2>nicolas</h2>
+    <h3>my name is nicolas</h3>
+    <h3>my name to caption = NICOLAS</h3>
+    <!-- \ 转义-->
+    <p>#{myName}</p>
+    <!--  输出未定义的变量， 会undefined-->
+    <input value="undefined">
+    <!-- 用等号的方式，则不显示-->
+    <input>
+    <input value="nicolas">
+    <!--  循环 for in-->
+    <p>xf</p>
+    <p>18</p>
+    <p>true</p>
+    <!-- each-->
+    <p>name: xf</p>
+    <p>age: 18</p>
+    <p>isMan: true</p>
+    <script>
+      const vname = 'ff'
+
+    </script>
+    <!-- mixins 无参数-->
+    <h2>mixins</h2>
+    <!-- 调用mixin-->
+        <p>this is jade mixin lesson</p>
+    <!-- 有参数mixin-->
+        <h2>my name is xiao</h2>
+        <ul>my course is
+          <li>english</li>
+          <li>mathematic</li>
+          <li>history</li>
+        </ul>
+    <!--  模板继承-->
+    <h1>模板继承</h1>
+    <p>这是一个模板</p>
+    <p>这是一个模板</p>
+  </body>
+</html>
